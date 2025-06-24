@@ -1,0 +1,42 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+.env/
+venv/
+ENV/
+
+# Poetry lock/log
+poetry.lock
+poetry.toml
+*.log
+
+# VS Code settings
+.vscode/
+
+# Test and coverage
+.coverage
+coverage.*
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+
+# Misc
+*.DS_Store
+*.swp
+*.swo
+*.bak
+
+# Environment files
+.env
+.env.*
+
+# GPG or SSH secrets (just in case)
+*.asc
+*.gpg
+*.key
+*.pem
