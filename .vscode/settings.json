@@ -1,0 +1,33 @@
+{
+  // Use Poetry's in-project virtualenv
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+
+  // Formatter: Black, with line length 88 (or change to 79 if preferred)
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "88"],
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "editor.rulers": [88],
+
+  // Ensure the terminal uses the correct venv
+  "terminal.integrated.env.linux": {
+    "VIRTUAL_ENV": "${workspaceFolder}/.venv",
+    "PATH": "${workspaceFolder}/.venv/bin:${env:PATH}"
+  },
+
+
+  "editor.codeActionsOnSave": {
+  "source.organizeImports": "always"
+},
+"isort.args": ["--profile", "black"],
+
+  // Optional: exclude virtualenv from search results
+  "search.exclude": {
+    "**/.venv": true
+  },
+
+  // Optional: exclude `.venv` from file watching to save performance
+  "files.watcherExclude": {
+    "**/.venv/**": true
+  }
+}
