@@ -15,7 +15,7 @@ poetry.toml
 *.log
 
 # VS Code settings
-.vscode/
+.vscode/tasks.json
 
 # Test and coverage
 .coverage
@@ -33,7 +33,7 @@ htmlcov/
 
 # Environment files
 .env
-.env.*
+
 
 # GPG or SSH secrets (just in case)
 *.asc
